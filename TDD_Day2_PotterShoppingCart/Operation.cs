@@ -31,6 +31,10 @@ namespace TDD_Day2_PotterShoppingCart
             else if (Quantity == 4)
             {
                 return 0.8;
+            }
+            else if (Quantity >=5)
+            {
+                return 0.75;
             }        
             return 1;
 
