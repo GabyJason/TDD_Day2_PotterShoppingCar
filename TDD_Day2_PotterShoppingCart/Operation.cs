@@ -9,7 +9,23 @@ namespace TDD_Day2_PotterShoppingCart
     {
         public int CalcBook(IEnumerable<Book> books)
         {
-            return books.Sum(o=>o.Price);
+               
+            return Convert.ToInt32(books.Sum(o=>o.Price)*CalcPrice(books.Count()));
+        }
+        /// <summary>
+        /// 依不同級別折扣
+        /// </summary>
+        /// <param name="CalcPrice"></param>
+        /// <returns></returns>
+        private double CalcPrice(int Quantity)
+        {
+
+            if (Quantity == 2)
+            {
+                return 0.95;
+            }          
+            return 1;
+
         }
     }
 }
