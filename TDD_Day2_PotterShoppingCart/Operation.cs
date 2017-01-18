@@ -26,8 +26,9 @@ namespace TDD_Day2_PotterShoppingCart
                     {
                         _books.Add(book);
                     }
-                    Price += CalcBook(_books);
                 }
+                Price += CalcBook(_books);
+
             }
             return Price;
         }
